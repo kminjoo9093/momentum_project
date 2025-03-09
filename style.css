@@ -13,12 +13,8 @@ body{
 }
 .contents-box{
   width: 75%;
+  height: 700px;
   margin: 0 auto;
-  /* height: 70%; */
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -40%); */
   box-sizing: border-box;
   padding: 60px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -89,7 +85,7 @@ dialog::backdrop{
 }
 /* greeting */
 .greeting-area{
-  padding: 40px 0;
+  padding: 40px 0 20px;
 }
 .greeting-area > div{
   display: flex;
@@ -100,6 +96,7 @@ dialog::backdrop{
 .greeting-area p{
   width: 100px;
   height: auto;
+  margin: 0;
 }
 .greeting-area img{
   width: 100%;
