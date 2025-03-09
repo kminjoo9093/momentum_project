@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <dialog>
+        <form action="" id="login-form">
+          <input
+            type="text"
+            placeholder="What is your name?"
+            maxlength="15"
+            required
+          />
+          <button>LogIn</button>
+        </form>
+      </dialog>
+      <div class="greeting-area hidden">
+        <div>
+          <h1 class="greeting caveat"></h1>
+          <p>
+            <img src="images/smile_icon.png" alt="smile" />
+          </p>
+        </div>
+      </div>
+      <div class="contents-box">
+        <div class="clock-weather box">
+          <div class="clock"></div>
+          <div class="weather">
+            <span class="city"></span>
+            <span class="weather-condition">
+              <img class="icon" src="" alt="날씨" />
+              <em></em>
+            </span>
+          </div>
+        </div>
+        <div class="quote box">
+          <p class="quote-e"></p>
+          <p class="quote-k"></p>
+          <span class="author"></span>
+        </div>
+        <div class="todo-list box">
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write something to do..."
+              required
+            />
+          </form>
+          <ul class="todo-list-board"></ul>
+        </div>
+      </div>
+    </div>
+    <img id="bg-img" src="" alt="" />
+
+    <script src="js/login.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todolist.js"></script>
+  </body>
+</html>
